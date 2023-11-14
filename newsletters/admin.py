@@ -15,5 +15,5 @@ from django.urls import reverse
 #             link = format_html('<a href="{}">Send Newsletter</a>', url)
 #             self.message_user(request, link)
 
-admin.site.register(Newsletter,NewsletterAdmin)
+admin.site.register(Newsletter)
 admin.site.register(Subscriber)

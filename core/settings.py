@@ -16,6 +16,12 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 
+import environ
+
+env=environ.Env()
+
+environ.Env.read_env()
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
@@ -36,11 +42,6 @@ DEFAULT_FROM_EMAIL='isidahomengeorge10@gmail.com'
 ALLOWED_HOSTS = ['*']
 
 
-import environ
-
-env=environ.Env()
-
-environ.Env.read_env()
 
 # Application definition
 

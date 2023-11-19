@@ -114,11 +114,8 @@ DATABASES = {
 }
 
 import dj_database_url
-DATABASES = {
-    'default': dj_database_url.config(
-        # Feel free to alter this value to suit your needs.
-        default=dj_database_url.parse(env('DATABASE_URL')),
-    )
+DATABASES={
+    'default': dj_database_url.parse(env('DATABASE_URL'))
 }
 
 # Password validation

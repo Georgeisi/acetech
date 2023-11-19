@@ -21,7 +21,7 @@ def send_newsletterr(request, newsletter_id):
         for subscriber in subscribers:
             subject = f'Newsletter: {newsletter.title}'
             message = newsletter.content
-            sender_email = 'isidahomengeorge10@gmail.com' 
+            sender_email = 'isidahomengeorge33@gmail.com' 
 
             email = EmailMessage(subject, message, sender_email, [subscriber.email])
             email.send()
